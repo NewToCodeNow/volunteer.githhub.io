@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&family=Inika&family=Inria+Sans:wght@700&family=Istok+Web&family=Lily+Script+One&family=Poppins:wght@500&family=Roboto&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    outline: 0;
+    text-decoration: none;
+}
+
+body{
+    background-color: #f3f3f3;
+    font-family: "Fina Sans",sans-serif;
+}
+
+section{
+    display: block;
+}
+
+/* Header */
+
+header{
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+}
+
+header .header_brand{
+    font-family: "Fira Sans",sans-serif;
+    font-size: 24px;
+    color: #111;
+    font-weight: 900;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px;
+}
+
+header nav ul{
+    display: block;
+    margin: 0 auto;
+    list-style: none;
+    width: 280px;
+}
+
+header nav ul li{
+    display: inline-block;
+    float: left;
+    list-style: none;
+    padding: 0 16px;
+    cursor: pointer;
+}
+
+header nav ul li a{
+    font-family: "Fira Sans",sans-serif;
+    font-size: 16px;
+    color: #111;
+}
+
+ header nav ul li ul.submenu li{
+    display: block;
+    padding: 15px 10px;
+}
+
+header nav ul li a:hover{
+    color: #505f64;
+}
+
+.submenu{
+    width: 220px; 
+    background-color: #f3f3f3;
+    position: absolute;
+    z-index:999;
+    display: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #562e4f;
+}
+
+.submenu li{
+    width:200px
+}
+
+.submenu li:hover{
+    background-color: #fff;
+}
+
+header nav ul li:hover .submenu{
+    display: block;
+    /* background-color: #fff; */
+}
+
+/* Index */
+.index{
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: calc(100vh - 350px);
+}
+
+.index h1{
+    font-size: 60px;
+    font-weight: 700;
+    /* margin-top: 150px; */
+    padding-top: 150px;
+}
+
+.index h4{
+    font-size: 18px;
+    color: #505f64;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+/* We have been up to */
+.we-have-been-up-to{
+    width:100%;
+    height:fit-content;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding-top: 200px;
+    text-align: center;
+    /* margin-top: 20px; */
+}
+
+.we-have-been-up-to .examples{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.example{
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 30px 40px;
+    height: fit-content;
+    /* align-items: center; */
+    padding-bottom: 10px;
+}
+
+.example img{
+    width: 300px;
+    height: 200px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.example p{
+    width: 100%;
+}
+
+.example button{
+    background-color: white;
+    outline: 0;
+    border-width: 0;
+    margin-top: 10px;
+    color: blue;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Footer */
+footer{
+    background-color: #505f64;
+    width: 100%;
+    height: 40vh;
+}
+
+footer h1{
+    font-family: "Fina Sans",sans-serif;
+    font-size: 30px;
+    color: white;
+    padding: 20px
+}
+
+/* Animations */
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(1px);
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+}

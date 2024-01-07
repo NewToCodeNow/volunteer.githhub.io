@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&family=Inika&family=Inria+Sans:wght@700&family=Istok+Web&family=Lily+Script+One&family=Poppins:wght@500&family=Roboto&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    outline: 0;
+    text-decoration: none;
+}
+
+body{
+    background-color: #f3f3f3;
+}
+
+section{
+    display: block;
+}
+
+/* Header */
+
+header{
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+}
+
+header .header_brand{
+    font-family: "Fira Sans",sans-serif;
+    font-size: 24px;
+    color: #111;
+    font-weight: 900;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px;
+}
+
+header nav ul{
+    display: block;
+    margin: 0 auto;
+    list-style: none;
+    width: 280px;
+}
+
+header nav ul li{
+    display: inline-block;
+    float: left;
+    list-style: none;
+    padding: 0 16px;
+    cursor: pointer;
+}
+
+header nav ul li a{
+    font-family: "Fira Sans",sans-serif;
+    font-size: 16px;
+    color: #111;
+}
+
+ header nav ul li ul.submenu li{
+    display: block;
+    padding: 15px 10px
+}
+
+header nav ul li a:hover{
+    color: #505f64;
+}
+
+.submenu{
+    width: 220px; 
+    background-color: #f3f3f3;
+    position: absolute;
+    z-index:999;
+    display: none;
+    box-shadow: 2px 2px 2px #562e4f;
+    border-radius: 5px;
+}
+
+.submenu li{
+    width:200px
+}
+
+.submenu li:hover{
+    background-color: #fff;
+}
+
+header nav ul li:hover .submenu{
+    display: block;
+    /* background-color: #fff; */
+}
+/* Banner */
+
+.index-banner{
+    width:100%;
+    height: calc(100vh - 100px);
+    background-image: url("/assets/sample.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: opacity(0.6);
+    filter: contrast(0.8);
+}
+
+.index-banner h1{
+    font-family: "Fira Sans",sans-serif;
+    color: white;
+    font-size: 60px;
+    /* text-align: center; */
+    text-shadow: 2px 2px #111;
+    /* padding: 150px 100px; */
+    padding-top: 140px;
+    text-align: center;
+}
+
+.index-banner .horizontal-center{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.horizontal-center button{
+    outline: 0;
+    border-width: 0;
+    padding: 15px 15px;
+    margin: 10px 5px;
+    border-radius: 5px;
+}
+
+.purple_button{
+    background-color: #9f4ed9;
+    color: #fff;
+    font-family: "Fira Sans",sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover{
+    top: -5px;
+    position: relative;
+    box-shadow: 2px 2px 2px #562e4f;
+}
+
+.white_button{
+    background-color: #fff;
+    color: #9f4ed9;
+    font-family: "Fira Sans",sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Join Our Community */
+.join-our-community{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.join-our-community h1{
+    font-family: "Fira Sans",sans-serif;
+    font-size: 80px;
+    font-weight: 900;
+    color: #111;
+}
+
+.join-our-community h3{
+    font-family: "Fira Sans",sans-serif;
+    color: #625a5a;
+    font-size: 15px;
+}
+
+.join-our-community h4{
+    font-family: "Fira Sans",sans-serif;
+    color: #505f64;
+    font-size: 24px;
+}
+
+.join-our-community button{
+    outline: 0;
+    border-width: 0;
+    background-color: #9f4ed9;
+    color: #fff;
+    font-family: "Fira Sans",sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 15px 15px;
+    border-radius: 5px;
+}
+
+.steps-to-apply{
+    width:100%;
+    height:fit-content;
+    display: block;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding-top: 30px;
+    text-align: center;
+    /* margin-top: 20px; */
+}
+
+.steps-to-apply h3{
+    font-family: "Fira Sans",sans-serif;
+    color: #625a5a;
+    font-size: 15px;
+    font-weight: 1000;
+    margin-top: 25px;
+}
+
+.steps-to-apply h1{
+    font-family: "Fira Sans",sans-serif;
+    color: #111;
+    font-size: 45px;
+    margin-top: 20px;
+}
+
+.steps-to-apply h2{
+    font-family: "Fira Sans",sans-serif;
+    color:#505f64;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.steps-to-apply .steps{
+    width: 100%;
+    display: flex;
+    margin-top: 80px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.steps .step{
+    width: 300px;
+    margin: 10px 0 20px 20px;
+}
+
+.step p{
+    font-family: "Fira Sans",sans-serif;
+    color: #111;
+    font-size: 16px;
+}
+
+.steps-to-apply button{
+    outline: 0;
+    border-width: 0;
+    background-color: #9f4ed9;
+    color: #fff;
+    font-family: "Fira Sans",sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 15px 15px;
+    border-radius: 5px;
+}
+
+/* What we have been up to */
+.we-have-been-up-to{
+    width:100%;
+    height:fit-content;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding-top: 200px;
+    text-align: center;
+    /* margin-top: 20px; */
+}
+
+.we-have-been-up-to h4{
+    font-family: "Fira Sans",sans-serif;
+    color: white;
+    background-color: #8ee88f;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 25px;
+    /* margin-top: 20px; */
+}
+
+.we-have-been-up-to h1{
+    font-family: "Fira Sans",sans-serif;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.we-have-been-up-to h3{
+    font-family: "Fira Sans",sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.we-have-been-up-to .examples{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.example{
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 30px 40px;
+    height: fit-content;
+    /* align-items: center; */
+    padding-bottom: 10px;
+}
+
+.example img{
+    width: 300px;
+    height: 200px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.example p{
+    width: 100%;
+}
+
+.example button{
+    background-color: white;
+    outline: 0;
+    border-width: 0;
+    margin-top: 10px;
+    color: blue;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* FAQ */
+.FAQ{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+    padding-bottom: 30vh;
+}
+
+.FAQ h1{
+    font-family: "Fina Sans",sans-serif;
+    /* margin-top: 20px; */
+}
+
+.FAQ .wrapper{
+    width: 75%;
+    margin-top: 20px;
+}
+
+.accordion{
+    background-color: white;
+    color: #111;
+    cursor: pointer;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.accordion i{
+    font-size: 1.6rem;
+}
+
+.active,.accordion:hover{
+    background-color: #f1f7f5;
+}
+
+.panel{
+    padding: 0 2rem 2.5rem 2rem;
+    background-color: white;
+    overflow: hidden;
+    background-color: #f1f7f5;
+    display: none;
+}
+
+.panel p{
+    color: #505f64;
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.faq{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+}
+
+.faq .active{
+    border: none;
+}
+
+/* Footer */
+footer{
+    background-color: #505f64;
+    width: 100%;
+    height: 40vh;
+}
+
+footer h1{
+    font-family: "Fina Sans",sans-serif;
+    font-size: 30px;
+    color: white;
+    padding: 20px
+}
+
+/* Animations */
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(1px);
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+}
